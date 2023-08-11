@@ -1,0 +1,16 @@
+span {
+    background-color: yellow;
+}
+
+.defaultTxt {
+    color: #8F8C8C;
+}
+
+.emptyTextArea {
+    background-color: #EBB4B0;
+    border-color: #FF4646;
+}
+
+.invisibleTxt {
+    visibility: hidden;
+}
