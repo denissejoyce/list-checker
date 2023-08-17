@@ -56,7 +56,7 @@ function evaluateValues(FIRSTLIST, SECONDLIST){
 
     (commonArr=="") ?  document.querySelector("h2").innerText = "No similar item/s in lists" 
         : (commonArr.length==firstArr.length && commonArr.length==secondArr.length) ? document.querySelector("h2").innerText = "Identical list"
-        : document.querySelector("h2").innerText = commonArr;
+        : document.querySelector("h2").innerText = "Result: " + commonArr;
     document.querySelector("h2").classList.remove("invisibleTxt");
 
 }
