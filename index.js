@@ -5,6 +5,7 @@ for(let i=0; i<document.querySelectorAll("textarea").length; i++){
         for(let j=0; j<=1; j++){
             document.querySelectorAll("textarea")[j].innerText = textValue;
             document.querySelectorAll("textarea")[j].classList.remove("defaultTxt");
+            document.querySelectorAll("textarea")[j].classList.toggle("emptyTextArea");
         }
     })
 }
@@ -13,10 +14,10 @@ function checkValues(){
     const FIRSTLIST = document.getElementById("firstList").value;
     const SECONDLIST = document.getElementById("secondList").value;
 
-    if( FIRSTLIST=="" || SECONDLIST=="" ){
+    if( (FIRSTLIST=="" || SECONDLIST=="") || (FIRSTLIST=="Enter text here." || SECONDLIST=="Enter text here.") ){
         // document.querySelector("textarea.txtarea").classList.add("emptyTextArea");
         alert("Please make sure to input the values.");
-        if(FIRSTLIST=="" && SECONDLIST==""){
+        if( (FIRSTLIST=="" && SECONDLIST=="") || (FIRSTLIST=="Enter text here." && SECONDLIST=="Enter text here.") ){
             for(let i=0; i<=1; i++){
                 document.querySelectorAll("textarea.txtarea")[i].classList.add("emptyTextArea");
             }   
