@@ -53,12 +53,11 @@ function evaluateValues(FIRSTLIST, SECONDLIST){
         }
     }
 
-    
-
+    let refinedArr = [...new Set(commonArr)];
 
     (commonArr=="") ?  document.querySelector("h2").innerText = `No similar item/s in lists` 
         : (commonArr.length==firstArr.length && commonArr.length==secondArr.length) ? document.querySelector("h2").innerText = `Identical list`
-        : document.querySelector("h2").innerText = `Common Items: ${commonArr}`
+        : document.querySelector("h2").innerText = `Common Items: ${refinedArr}`
     document.querySelector("h2").classList.remove("invisibleTxt");
 
 }
