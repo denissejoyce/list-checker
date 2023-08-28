@@ -5,7 +5,7 @@ for(let i=0; i<document.querySelectorAll("textarea").length; i++){
         for(let j=0; j<=1; j++){
             document.querySelectorAll("textarea")[j].innerText = textValue;
             document.querySelectorAll("textarea")[j].classList.remove("defaultTxt");
-            document.querySelectorAll("textarea")[j].classList.toggle("emptyTextArea");
+            document.querySelectorAll("textarea")[j].classList.remove("emptyTextArea");
         }
     })
 }
